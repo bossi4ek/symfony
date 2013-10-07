@@ -1,0 +1,44 @@
+<?php
+/**
+ * Created by JetBrains PhpStorm.
+ * User: boss
+ * Date: 07.10.13
+ * Time: 21:12
+ * To change this template use File | Settings | File Templates.
+ */
+
+namespace Acme\PostBundle\Entity;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="post")
+ */
+class Post
+{
+    /**
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @ORM\Column()
+     */
+    protected $title;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    protected $description;
+
+    /**
+     * @ORM\Column()
+     */
+    protected $unsername;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    protected $date_create;
+}

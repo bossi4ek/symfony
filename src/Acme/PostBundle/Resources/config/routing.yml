@@ -1,0 +1,15 @@
+post_homepage:
+    pattern:  /post
+    defaults: { _controller: AcmePostBundle:Default:index }
+
+post_add:
+    pattern:  /post/add
+    defaults: { _controller: AcmePostBundle:Default:add }
+
+post_update:
+    pattern:  /post/update/{id}
+    defaults: { _controller: AcmePostBundle:Default:update }
+
+post_del:
+    pattern:  /post/del/{id}
+    defaults: { _controller: AcmePostBundle:Default:del }

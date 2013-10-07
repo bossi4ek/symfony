@@ -1,0 +1,4 @@
+acme_post:
+    resource: "@AcmePostBundle/Resources/config/routing.yml"
+    prefix:   /
+
